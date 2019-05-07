@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D685790909A699CCAE56EE62E9ADE72B"
-               BuildableName = "AddressSearchModule.framework"
-               BlueprintName = "AddressSearchModule"
+               BlueprintIdentifier = "C918C082B56443EA8E8CE08DC34D995C"
+               BuildableName = "KrAddressSearch.framework"
+               BlueprintName = "KrAddressSearch"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

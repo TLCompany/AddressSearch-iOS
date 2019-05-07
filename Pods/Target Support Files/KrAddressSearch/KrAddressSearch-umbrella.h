@@ -12,6 +12,6 @@
 
 #import "AddressSearchModule.h"
 
-FOUNDATION_EXPORT double AddressSearchModuleVersionNumber;
-FOUNDATION_EXPORT const unsigned char AddressSearchModuleVersionString[];
+FOUNDATION_EXPORT double KrAddressSearchVersionNumber;
+FOUNDATION_EXPORT const unsigned char KrAddressSearchVersionString[];
 

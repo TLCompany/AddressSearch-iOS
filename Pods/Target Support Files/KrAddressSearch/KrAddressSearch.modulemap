@@ -1,0 +1,6 @@
+framework module KrAddressSearch {
+  umbrella header "KrAddressSearch-umbrella.h"
+
+  export *
+  module * { export * }
+}
