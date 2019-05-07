@@ -28,13 +28,13 @@
                                             <constraint firstAttribute="height" constant="0.5" id="PFm-Bw-mfi"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-tH-Ol2">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-tH-Ol2">
                                         <rect key="frame" x="20" y="44" width="44" height="43.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43.5" id="3Jm-CK-poc"/>
                                             <constraint firstAttribute="width" constant="44" id="rAw-qN-eiA"/>
                                         </constraints>
-                                        <state key="normal" image="close.png"/>
+                                        <state key="normal" image="close"/>
                                         <connections>
                                             <action selector="touchDismiss:" destination="42f-0V-Gwk" eventType="touchUpInside" id="ppM-iC-NE2"/>
                                         </connections>
@@ -45,13 +45,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="provider_logo" translatesAutoresizingMaskIntoConstraints="NO" id="X3e-hC-Ziz">
+                                        <rect key="frame" x="271" y="53" width="124" height="26"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="oKF-dd-ch5" secondAttribute="trailing" id="0Or-W1-WqT"/>
                                     <constraint firstItem="Ipt-hQ-g80" firstAttribute="leading" secondItem="dlq-tH-Ol2" secondAttribute="trailing" constant="10" id="854-Od-Fp2"/>
                                     <constraint firstItem="oKF-dd-ch5" firstAttribute="leading" secondItem="HcH-Wg-glM" secondAttribute="leading" id="DzT-oE-qDu"/>
+                                    <constraint firstAttribute="trailing" secondItem="X3e-hC-Ziz" secondAttribute="trailing" constant="19" id="Gf8-n2-tmP"/>
                                     <constraint firstItem="dlq-tH-Ol2" firstAttribute="leading" secondItem="HcH-Wg-glM" secondAttribute="leading" constant="20" id="Jj9-pE-JT7"/>
+                                    <constraint firstItem="X3e-hC-Ziz" firstAttribute="centerY" secondItem="Ipt-hQ-g80" secondAttribute="centerY" id="LUi-zb-91j"/>
                                     <constraint firstAttribute="trailing" secondItem="Ipt-hQ-g80" secondAttribute="trailing" constant="74" id="OSu-5s-neT"/>
                                     <constraint firstAttribute="bottom" secondItem="oKF-dd-ch5" secondAttribute="bottom" id="R7A-6y-2rq"/>
                                     <constraint firstItem="dlq-tH-Ol2" firstAttribute="bottom" secondItem="oKF-dd-ch5" secondAttribute="top" id="Yim-tR-SSx"/>
@@ -125,12 +130,12 @@
                                     <outlet property="delegate" destination="42f-0V-Gwk" id="73Z-lb-qMQ"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2t-0f-Smx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2t-0f-Smx">
                                 <rect key="frame" x="270" y="163" width="124" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="aD6-DZ-eOo"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="tl_logo_dark.png"/>
+                                <state key="normal" image="tl_logo_dark"/>
                                 <connections>
                                     <action selector="touchTLLogo:" destination="42f-0V-Gwk" eventType="touchUpInside" id="4t6-wh-fp2"/>
                                 </connections>
@@ -140,7 +145,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="cnS-7U-Ker"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="provider_logo.png"/>
+                                <state key="normal" backgroundImage="provider_logo"/>
                                 <connections>
                                     <action selector="touchProvidersLogo:" destination="42f-0V-Gwk" eventType="touchUpInside" id="31g-JE-6ut"/>
                                 </connections>
@@ -218,7 +223,7 @@
                                             <constraint firstAttribute="height" constant="43.5" id="imu-ZO-F2T"/>
                                             <constraint firstAttribute="width" constant="44" id="o84-F2-zmX"/>
                                         </constraints>
-                                        <state key="normal" image="back.png"/>
+                                        <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="touchBack:" destination="pzN-m8-MX5" eventType="touchUpInside" id="fdd-eN-qZr"/>
                                             <action selector="touchDismiss:" destination="42f-0V-Gwk" eventType="touchUpInside" id="kkq-fX-jNa"/>
@@ -322,9 +327,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back.png" width="10" height="16"/>
-        <image name="close.png" width="16" height="16"/>
-        <image name="provider_logo.png" width="67" height="16"/>
-        <image name="tl_logo_dark.png" width="123" height="26"/>
+        <image name="back" width="10" height="16"/>
+        <image name="close" width="25" height="25"/>
+        <image name="provider_logo" width="124" height="26"/>
+        <image name="tl_logo_dark" width="124" height="26"/>
     </resources>
 </document>
