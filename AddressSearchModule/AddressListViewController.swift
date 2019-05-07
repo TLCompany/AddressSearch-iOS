@@ -52,6 +52,9 @@ class AddressListViewController: UIViewController {
         }
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
     
     
     private func processData(_ data: Data) {
