@@ -130,7 +130,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="aD6-DZ-eOo"/>
                                 </constraints>
-                                <state key="normal" image="tl_logo_dark"/>
+                                <state key="normal" image="tl_logo"/>
                                 <connections>
                                     <action selector="touchTLLogo:" destination="42f-0V-Gwk" eventType="touchUpInside" id="4t6-wh-fp2"/>
                                 </connections>
@@ -325,6 +325,6 @@
         <image name="back" width="10" height="16"/>
         <image name="close" width="25" height="25"/>
         <image name="provider_logo" width="367" height="78"/>
-        <image name="tl_logo_dark" width="378" height="78"/>
+        <image name="tl_logo" width="367" height="78"/>
     </resources>
 </document>

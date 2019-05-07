@@ -2,18 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "tl_logo_dark~universal@1x.png"
+      "filename" : "tl_logo.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "tl_logo_dark~universal@2x.png",
+      "filename" : "tl_logo@2x.png",
       "scale" : "2x"
     },
     {
-      "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "tl_logo_dark~universal@3x.png"
+      "filename" : "tl_logo@3x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {

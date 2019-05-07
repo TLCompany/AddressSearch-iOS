@@ -1,12 +1,12 @@
 PODS:
-  - AddressSearchModule (1.0.12):
+  - AddressSearchModule (1.0.13):
     - Alamofire
     - Toast-Swift
   - Alamofire (4.8.2)
   - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
-  - AddressSearchModule (from `https://github.com/TLCompany/AddressSearch-iOS.git`, tag `1.0.13`)
+  - AddressSearchModule (from `https://github.com/TLCompany/AddressSearch-iOS.git`, tag `1.0.14`)
   - Alamofire
   - Toast-Swift
 
@@ -18,18 +18,18 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   AddressSearchModule:
     :git: https://github.com/TLCompany/AddressSearch-iOS.git
-    :tag: 1.0.13
+    :tag: 1.0.14
 
 CHECKOUT OPTIONS:
   AddressSearchModule:
     :git: https://github.com/TLCompany/AddressSearch-iOS.git
-    :tag: 1.0.13
+    :tag: 1.0.14
 
 SPEC CHECKSUMS:
-  AddressSearchModule: 6c011fe44458ef75bf3f20775e13cdb3578936a7
+  AddressSearchModule: 8394fe33ff5263d45aad9c440fbd3e97cd57e35c
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 548e70ee3ea450914b8273e9f57e99fe6fbd56bc
+PODFILE CHECKSUM: 63c56e4e15e7b3547d17b8bf1b72661a1a838113
 
 COCOAPODS: 1.7.0.beta.3

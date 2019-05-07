@@ -93,7 +93,7 @@ class AddressListViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var providerButton: UIButton! 
+    @IBOutlet private weak var providerButton: UIButton!
     @IBOutlet private weak var logoButton: UIButton!
     @IBOutlet private weak var closeButton: UIButton!
     @IBOutlet private weak var searchTextField: UITextField!
