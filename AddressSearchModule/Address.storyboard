@@ -13,7 +13,7 @@
         <!--AddressSearchViewController-->
         <scene sceneID="8Kx-hH-sse">
             <objects>
-                <viewController storyboardIdentifier="AddressSearchViewController" title="AddressSearchViewController" id="42f-0V-Gwk" customClass="AddressListViewController" customModule="tls_address" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddressSearchViewController" title="AddressSearchViewController" id="42f-0V-Gwk" customClass="AddressListViewController" customModule="AddressSearchModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g3N-b9-Wif">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
                                 <rect key="frame" x="0.0" y="194" width="414" height="702"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddressListItemId" rowHeight="60" id="2lL-sx-xI0" customClass="AddressListItemCell" customModule="tls_address" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddressListItemId" rowHeight="60" id="2lL-sx-xI0" customClass="AddressListItemCell" customModule="AddressSearchModule" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2lL-sx-xI0" id="Ofe-gI-OVa">
@@ -195,7 +195,7 @@
         <!--AddDetailViewController-->
         <scene sceneID="vNe-oT-cTK">
             <objects>
-                <viewController storyboardIdentifier="AddDetailViewController" title="AddDetailViewController" id="pzN-m8-MX5" customClass="AddressDetailViewController" customModule="tls_address" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddDetailViewController" title="AddDetailViewController" id="pzN-m8-MX5" customClass="AddressDetailViewController" customModule="AddressSearchModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17M-71-Qry">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

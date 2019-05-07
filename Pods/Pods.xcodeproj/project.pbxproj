@@ -658,42 +658,6 @@
 			};
 			name = Debug;
 		};
-		495BD0EA531CA346682425059C8D2550 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA96B3EFD6FBE548D80798C094071B4D /* AddressSearchModule.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AddressSearchModule/AddressSearchModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule.modulemap";
-				PRODUCT_MODULE_NAME = AddressSearchModule;
-				PRODUCT_NAME = AddressSearchModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		4BB6F4ECA69959E6ACA15C885EED28AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FDD85E7C5076A659C02CDFBFE6D78D37 /* Alamofire.xcconfig */;
@@ -891,43 +855,6 @@
 			};
 			name = Debug;
 		};
-		7EA183C1E608BC2284CC2876549D9B06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA96B3EFD6FBE548D80798C094071B4D /* AddressSearchModule.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AddressSearchModule/AddressSearchModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule.modulemap";
-				PRODUCT_MODULE_NAME = AddressSearchModule;
-				PRODUCT_NAME = AddressSearchModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		8C49718D3D6A8F7E7CBCF0D62E21EDBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E40065DE175C33CA07467F6365343A7 /* Toast-Swift.xcconfig */;
@@ -1000,6 +927,42 @@
 			};
 			name = Release;
 		};
+		D2DF417D9209DC1F056984C31DB80443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA96B3EFD6FBE548D80798C094071B4D /* AddressSearchModule.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AddressSearchModule/AddressSearchModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule.modulemap";
+				PRODUCT_MODULE_NAME = AddressSearchModule;
+				PRODUCT_NAME = AddressSearchModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E4B8176ECAE624FA495A6750C3A92DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D1324BFA64B2CE952596973E3EF4353 /* Pods-AddressSearchModule.release.xcconfig */;
@@ -1032,6 +995,43 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0E93141538DE09255DFA0510ED03881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA96B3EFD6FBE548D80798C094071B4D /* AddressSearchModule.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AddressSearchModule/AddressSearchModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AddressSearchModule/AddressSearchModule.modulemap";
+				PRODUCT_MODULE_NAME = AddressSearchModule;
+				PRODUCT_NAME = AddressSearchModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1081,8 +1081,8 @@
 		D2AF99AFA46AC89CB84CAF658B635E6A /* Build configuration list for PBXNativeTarget "AddressSearchModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				495BD0EA531CA346682425059C8D2550 /* Debug */,
-				7EA183C1E608BC2284CC2876549D9B06 /* Release */,
+				D2DF417D9209DC1F056984C31DB80443 /* Debug */,
+				F0E93141538DE09255DFA0510ED03881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

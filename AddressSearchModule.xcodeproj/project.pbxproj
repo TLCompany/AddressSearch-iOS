@@ -15,6 +15,7 @@
 		D238278F22811C930032D937 /* Address.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D238278822811C930032D937 /* Address.storyboard */; };
 		D238279022811C930032D937 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238278A22811C930032D937 /* Address.swift */; };
 		D238279122811C930032D937 /* AddressSearchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238278B22811C930032D937 /* AddressSearchHelper.swift */; };
+		D238283622815AE50032D937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D238283522815AE50032D937 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D238278822811C930032D937 /* Address.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Address.storyboard; sourceTree = "<group>"; };
 		D238278A22811C930032D937 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		D238278B22811C930032D937 /* AddressSearchHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSearchHelper.swift; sourceTree = "<group>"; };
+		D238283522815AE50032D937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		D238277A22811C830032D937 /* AddressSearchModule */ = {
 			isa = PBXGroup;
 			children = (
+				D238283522815AE50032D937 /* Assets.xcassets */,
 				D238278B22811C930032D937 /* AddressSearchHelper.swift */,
 				D238278622811C930032D937 /* AddressDetailViewController.swift */,
 				D238278722811C930032D937 /* AddressListViewController.swift */,
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D238283622815AE50032D937 /* Assets.xcassets in Resources */,
 				D238278F22811C930032D937 /* Address.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
