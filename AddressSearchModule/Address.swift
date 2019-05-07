@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Address {
+public struct Address {
     /// 전체주소(번지)
     let jbAddrs: String
     /// 전체주소(도로명)

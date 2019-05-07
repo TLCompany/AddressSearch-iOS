@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class AddressSearchHelper: NSObject {
+public final class AddressSearchHelper: NSObject {
     
     public var viewController: UIViewController?
     public var countPerPage: Int = 100
@@ -32,7 +32,7 @@ final class AddressSearchHelper: NSObject {
     }
 }
 
-protocol AddressSearchHelperDelegate: class {
+public protocol AddressSearchHelperDelegate: class {
     
     /// 주소 검색과 상세주소 입력이 완료 된 후의 Address를 보내준다.
     func didFinishSearchingAddress(_ address: Address?)
