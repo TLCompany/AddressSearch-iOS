@@ -93,22 +93,9 @@ class AddressListViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var providerButton: UIButton! {
-        didSet {
-            providerButton.setBackgroundImage(UIImage(named: "provider_logo"), for: .normal)
-        }
-    }
-    @IBOutlet private weak var logoButton: UIButton! {
-        didSet {
-            logoButton.setBackgroundImage(UIImage(named: "tl_logo_dark"), for: .normal)
-        }
-    }
-    
-    @IBOutlet private weak var closeButton: UIButton! {
-        didSet {
-            closeButton.setBackgroundImage(UIImage(named: "close"), for: .normal)
-        }
-    }
+    @IBOutlet weak var providerButton: UIButton! 
+    @IBOutlet private weak var logoButton: UIButton!
+    @IBOutlet private weak var closeButton: UIButton!
     @IBOutlet private weak var searchTextField: UITextField!
     @IBOutlet private weak var searchButton: UIButton!
     @IBOutlet private weak var addrsListTableView: UITableView!

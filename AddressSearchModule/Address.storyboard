@@ -34,7 +34,7 @@
                                             <constraint firstAttribute="height" constant="43.5" id="3Jm-CK-poc"/>
                                             <constraint firstAttribute="width" constant="44" id="rAw-qN-eiA"/>
                                         </constraints>
-                                        <state key="normal" image="close"/>
+                                        <state key="normal" image="close.png"/>
                                         <connections>
                                             <action selector="touchDismiss:" destination="42f-0V-Gwk" eventType="touchUpInside" id="ppM-iC-NE2"/>
                                         </connections>
@@ -323,7 +323,7 @@
     </scenes>
     <resources>
         <image name="back.png" width="10" height="16"/>
-        <image name="close" width="16" height="16"/>
+        <image name="close.png" width="16" height="16"/>
         <image name="provider_logo.png" width="67" height="16"/>
         <image name="tl_logo_dark.png" width="123" height="26"/>
     </resources>
