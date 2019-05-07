@@ -64,7 +64,7 @@ class AddressListViewController: UIViewController {
             return
         }
         
-        guard let resultJson = initialJson?["results"] as? [String: Any] else {
+        guard let resultJson = initialJson["results"] as? [String: Any] else {
             print("😭 the values of results is missing")
             return
         }
