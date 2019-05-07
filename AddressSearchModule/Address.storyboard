@@ -130,7 +130,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="aD6-DZ-eOo"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="tl_logo_dark"/>
+                                <state key="normal" backgroundImage="tl_logo_dark.png"/>
                                 <connections>
                                     <action selector="touchTLLogo:" destination="42f-0V-Gwk" eventType="touchUpInside" id="4t6-wh-fp2"/>
                                 </connections>
@@ -140,7 +140,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="cnS-7U-Ker"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="provider_logo"/>
+                                <state key="normal" backgroundImage="provider_logo.png"/>
                                 <connections>
                                     <action selector="touchProvidersLogo:" destination="42f-0V-Gwk" eventType="touchUpInside" id="31g-JE-6ut"/>
                                 </connections>
@@ -218,7 +218,7 @@
                                             <constraint firstAttribute="height" constant="43.5" id="imu-ZO-F2T"/>
                                             <constraint firstAttribute="width" constant="44" id="o84-F2-zmX"/>
                                         </constraints>
-                                        <state key="normal" image="back"/>
+                                        <state key="normal" image="back.png"/>
                                         <connections>
                                             <action selector="touchBack:" destination="pzN-m8-MX5" eventType="touchUpInside" id="fdd-eN-qZr"/>
                                             <action selector="touchDismiss:" destination="42f-0V-Gwk" eventType="touchUpInside" id="kkq-fX-jNa"/>
@@ -322,9 +322,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="10" height="16"/>
+        <image name="back.png" width="10" height="16"/>
         <image name="close" width="16" height="16"/>
-        <image name="provider_logo" width="67" height="16"/>
-        <image name="tl_logo_dark" width="122.5" height="26"/>
+        <image name="provider_logo.png" width="67" height="16"/>
+        <image name="tl_logo_dark.png" width="123" height="26"/>
     </resources>
 </document>
