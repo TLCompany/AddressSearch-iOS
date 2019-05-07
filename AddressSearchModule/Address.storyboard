@@ -182,7 +182,9 @@
                     </view>
                     <connections>
                         <outlet property="addrsListTableView" destination="8QL-LY-9mv" id="LUk-aM-0dM"/>
+                        <outlet property="closeButton" destination="dlq-tH-Ol2" id="aoB-fQ-jow"/>
                         <outlet property="logoButton" destination="H2t-0f-Smx" id="Orh-qU-Naw"/>
+                        <outlet property="providerButton" destination="nGL-Nn-qY5" id="cAD-S3-gLB"/>
                         <outlet property="searchButton" destination="eEQ-RC-PcQ" id="88q-g1-r48"/>
                         <outlet property="searchTextField" destination="y4r-KC-q1o" id="5w1-oK-djJ"/>
                         <outlet property="totalResultLabel" destination="2HT-6z-UyY" id="8rW-pE-Ucl"/>

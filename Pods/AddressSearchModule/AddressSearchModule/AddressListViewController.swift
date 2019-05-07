@@ -52,6 +52,9 @@ class AddressListViewController: UIViewController {
         }
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
     
     
     private func processData(_ data: Data) {
@@ -90,6 +93,7 @@ class AddressListViewController: UIViewController {
         }
     }
     
+    @IBOutlet private weak var closeButton: UIButton!
     @IBOutlet private weak var logoButton: UIButton!
     @IBOutlet private weak var searchTextField: UITextField!
     @IBOutlet private weak var searchButton: UIButton!
