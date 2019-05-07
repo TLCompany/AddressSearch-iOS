@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Toast-Swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: 28896f4a7261dd03ae9eff1b43c08e236637d774
+
+COCOAPODS: 1.7.0.beta.3
