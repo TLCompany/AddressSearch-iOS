@@ -23,7 +23,10 @@ public final class AddressSearchHelper: NSObject {
             return
         }
         
-        guard let addressSearchVC = UIStoryboard(name: "Address", bundle: nil).instantiateViewController(withIdentifier: "AddressSearchViewController") as? AddressListViewController else { return }
+        let bundle = Bundle(for: AddressListViewController.self)
+        guard let addressSearchVC = UIStoryboard(name: "Address", bundle: bundle).instantiateViewController(withIdentifier: "AddressSearchViewController") as? AddressListViewController else { return }
+        
+//        guard let addressSearchVC = UIStoryboard(name: "Address", bundle: nil).instantiateViewController(withIdentifier: "AddressSearchViewController") as? AddressListViewController else { return }
         addressSearchVC.delegate = self.delegate
         addressSearchVC.countPerPage = self.countPerPage
         addressSearchVC.confmKey = confmKey
