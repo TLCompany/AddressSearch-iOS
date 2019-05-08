@@ -53,8 +53,8 @@ class AddressDetailViewController: UIViewController {
         }
         
         
-        jibunAddrsLabel.text = address.jbAddrs
-        rdAddrsLabel.text = address.rdAddrs
-        zipCodeLabel.text = "우편번호: \(address.zipCode)"
+        jibunAddrsLabel.text = address.jibunAddr
+        rdAddrsLabel.text = address.roadFullAddr
+        zipCodeLabel.text = "우편번호: \(address.zipNo)"
     }
 }

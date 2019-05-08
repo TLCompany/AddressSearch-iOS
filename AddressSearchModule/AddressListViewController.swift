@@ -142,6 +142,7 @@ extension AddressListViewController: UITableViewDelegate,  UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let itemCell = tableView.dequeueReusableCell(withIdentifier: AddressListItemCell.id, for: indexPath) as? AddressListItemCell else {
             fatalError("AddressResultItemCell cannot be utilised")
         }

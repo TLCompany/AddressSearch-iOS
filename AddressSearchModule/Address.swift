@@ -10,27 +10,27 @@ import Foundation
 
 public struct Address {
     /// 전체주소(번지)
-    let jbAddrs: String
+    let jibunAddr: String
     /// 전체주소(도로명)
-    let rdAddrs: String
+    let roadFullAddr: String
     /// 전체주소(영어)
-    let enAddrs: String
+    let engAddr: String
     /// 우편번호
-    let zipCode: String
+    let zipNo: String
     /// 시 이름
-    let siName: String
+    let siNm: String
     /// 시군구 명
-    let sggName: String
+    let sggNm: String
     /// 읍면동 명
-    let emdName: String
+    let emdNm: String
     /// 법정리 명
-    let liName: String
+    let liNm: String
     /// 도로명
-    let rdName: String
+    let rn: String
     /// 번지
-    let bunji: String
+    let lnbrMnnm: String
     /// 호
-    let ho: String
+    let lnbrSlno: String
     /// 상세주소(사용자입력)
     var detail: String? = nil
     
@@ -78,17 +78,17 @@ public struct Address {
             print("ho JSON 변환 중 에러발생 😭"); return nil
         }
         
-        self.jbAddrs = jbAddrs
-        self.rdAddrs = rdAddrsPart1 + (rdAddrsPart2 == nil ? "" : " (\(rdAddrsPart2!.replacingOccurrences(of: " ", with: "")))")
-        self.enAddrs = enAddrs
-        self.zipCode = zipCode
-        self.siName = siName
-        self.sggName = sggName
-        self.emdName = emdName
-        self.liName = liName
-        self.rdName = rdName
-        self.bunji = bunji
-        self.ho = ho
+        self.jibunAddr = jbAddrs
+        self.roadFullAddr = rdAddrsPart1 + (rdAddrsPart2 == nil ? "" : " (\(rdAddrsPart2!.replacingOccurrences(of: " ", with: "")))")
+        self.engAddr = enAddrs
+        self.zipNo = zipCode
+        self.siNm = siName
+        self.sggNm = sggName
+        self.emdNm = emdName
+        self.liNm = liName
+        self.rn = rdName
+        self.lnbrMnnm = bunji
+        self.lnbrSlno = ho
     }
 }
 

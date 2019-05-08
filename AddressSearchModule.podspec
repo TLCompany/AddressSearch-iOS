@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "AddressSearchModule"
-    spec.version      = "1.0.14"
+    spec.version      = "1.0.15"
     spec.summary      = "대한민국 주소 검색 iOS Library"
     spec.description  = "대한민국의 주소(번지, 도로명 또는 영어)를 검색할 수 있는 iOS Library입니다."
     spec.homepage     = "https://github.com/TLCompany/AddressSearch-iOS"
@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
 
     spec.author       = { "Justin Ji" => "jjeui0308@gmail.com" }
     spec.platform     = :ios, "11.0"
-    spec.source       = { :git =>"https://github.com/TLCompany/AddressSearch-iOS.git", :tag => "1.0.14" }
+    spec.source       = { :git =>"https://github.com/TLCompany/AddressSearch-iOS.git", :tag => "1.0.15" }
     spec.framework = "UIKit"
     spec.swift_version = '5.0'
     spec.resources = "AddressSearchModule/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
