@@ -13,6 +13,7 @@ import Toast_Swift
 /// 주소 검색 결과의 리스트를 보여주는 controller
 class AddressListViewController: UIViewController {
     
+    private let TAG = "AddressListViewController"
     private let urlString = "http://www.juso.go.kr/addrlink/addrLinkApiJsonp.do"
     private let feedbackGenerator = UIImpactFeedbackGenerator()
     public var confmKey: String = ""
@@ -28,9 +29,21 @@ class AddressListViewController: UIViewController {
     }
     
     private func search() {
-        guard let url = URL(string: urlString) else { print("😭 url is not valid"); return }
-        guard let keyword = searchTextField.text, !keyword.isEmpty else { self.view.makeToast("검색어를 입력해 주세요."); return }
-        guard let kData = keyword.data(using: .utf8), let cfkData = confmKey.data(using: .utf8), let jData = "json".data(using: .utf8) else { return }
+        guard let url = URL(string: urlString) else { NSLog(TAG, "😭 url is not valid"); return }
+        
+        guard let keyword = searchTextField.text, !keyword.isEmpty else {
+            self.view.makeToast("검색어를 입력해 주세요.")
+            NSLog(TAG, "😱 No Keyword is entred...")
+            return
+        }
+        
+        guard let kData = keyword.data(using: .utf8),
+            let cfkData = confmKey.data(using: .utf8),
+            let jData = "json".data(using: .utf8) else {
+            
+            NSLog(TAG, "😱 keyword and confmKey cannot be converted into data...")
+            return
+        }
         
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             multipartFormData.append(kData, withName: "keyword")
@@ -60,36 +73,30 @@ class AddressListViewController: UIViewController {
     private func processData(_ data: Data) {
         feedbackGenerator.impactOccurred()
         self.addresses.removeAll()
-        let jsonStr = String(data: data, encoding: .utf8)?.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
-        guard let refinedData = jsonStr?.data(using: .utf8) else { return }
-        guard let initialJson = try? JSONSerialization.jsonObject(with: refinedData, options: .mutableContainers) as? [String: Any] else {
-            print("😭 initial json KOV cannot be json-serialised. There must be something wrong with dealing with string data received from the API server.")
-            return
-        }
         
-        guard let resultJson = initialJson["results"] as? [String: Any] else {
-            print("😭 the values of results is missing")
-            return
-        }
-        
-        guard let jusoArray = resultJson["juso"] as? [[String: Any]] else {
+        AddressSearchHelper.processData(data) { (receivedAddresses, addrsError) in
+            if let error = addrsError {
+                switch error {
+                case .jsonParsing(let message): NSLog(TAG, message)
+                case .noViewController: NSLog(TAG, "😭 ViewController가 AddressSearchHelper에 reference되어 있지 않습니다...")
+                case .apiError(let errorCode): self.view.makeToast(errorCode.message)
+                }
+                return
+            }
             
+            guard let addresses = receivedAddresses, !addresses.isEmpty else {
+                DispatchQueue.main.async {
+                    self.totalResultLabel.text = "검색결과 없음"
+                    self.addrsListTableView.reloadData()
+                }
+                return
+            }
+            
+            self.addresses = addresses
             DispatchQueue.main.async {
-                self.totalResultLabel.text = "검색결과 없음"
                 self.addrsListTableView.reloadData()
+                self.totalResultLabel.text = "검색결과(\(self.addresses.count)건)"
             }
-            return
-        }
-        
-        jusoArray.forEach {
-            if let address = Address(json: $0) {
-                addresses.append(address)
-            }
-        }
-        
-        DispatchQueue.main.async {
-            self.addrsListTableView.reloadData()
-            self.totalResultLabel.text = "검색결과(\(self.addresses.count)건)"
         }
     }
     
