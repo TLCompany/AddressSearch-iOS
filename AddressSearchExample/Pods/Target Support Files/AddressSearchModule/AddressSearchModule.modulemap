@@ -1,0 +1,6 @@
+framework module AddressSearchModule {
+  umbrella header "AddressSearchModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
