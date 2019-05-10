@@ -8,7 +8,9 @@
 - 이 Library는 TLSolution에서 제작하였습니다. (http://www.tlsolution.co.kr)
 - 아래의 스크린샷을 참고해 주세요.
 
-![intro.png](./AddressSearch-iOS/Resources/Images/intro.png)
+![intro.png](./Resources/Images/intro.png)
+
+
 
 
 
@@ -20,21 +22,21 @@
 
 ## 사용 방법 
 1. 프로젝트의 info.plist 파일에서 App Transport Security Settings을 추가해 주시고, 그 안에 Allow Arbitrary Loads의 값을 YES로 넣어주세요. 
-![plist.png](./AddressSearch-iOS/Resources/Images/plist.png)
+![plist.png](./Resources/Images/plist.png)
 
 2. 주소 검색을 시작할 ViewController에서 AddressSearchHelper의 객체를 만들어 주시고, 한국지역 정보 개발원에서 confmKey를 발급 받아 주세요. 그리고 viewDidLoad()에서 AddressSearchHelper의 세팅을 완료해 주세요.
-![One.png](./AddressSearch-iOS/Resources/Images/One.png)
-![Two.png](./AddressSearch-iOS/Resources/Images/Two.png)
+![One.png](./Resources/Images/One.png)
+![Two.png](./Resources/Images/Two.png)
 
 3. delegate 패턴을 통해서 주소 데이터 콜백을 받을 AddressSearchHelperDelegate을 extension에 구현해 주세요.
-![three.png](./AddressSearch-iOS/Resources/Images/three.png)
+![three.png](./Resources/Images/three.png)
 
 4. 마지막으로 주소 검색을 시작을 startSearchingAddress()를 통해서 실행시켜 주세요.
-![Four.png](./AddressSearch-iOS/Resources/Images/Four.png)
+![Four.png](./Resources/Images/Four.png)
 
 ## 데이터 모델
 - Address 모델의 데이터
-![dataModelTable.png](./AddressSearch-Android-master/Reources/Images/dataModelTable.png)
+![dataModelTable.png](./Resources/Images/dataModelTable.png)
 
 
 
