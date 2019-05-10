@@ -10,12 +10,6 @@
 
 ![intro.png](./Resources/Images/intro.png)
 
-
-
-
-
-
-
 ## 설치 방법
 - CocoaPods를 사용해서 쉽게 설치해 주세요. 
 `pod 'AddressSearchModule'`
@@ -36,6 +30,7 @@
 
 ## 데이터 모델
 - Address 모델의 데이터
+
 ![dataModelTable.png](./Resources/Images/dataModelTable.png)
 
 
