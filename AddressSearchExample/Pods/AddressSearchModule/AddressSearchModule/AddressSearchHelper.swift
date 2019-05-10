@@ -42,6 +42,7 @@ public final class AddressSearchHelper: NSObject {
         
         testConfmKey(confmKey) { (isValid) in
             if isValid {
+                print("😀 주소검색을 위한 모든 세팅이 완료되었습니다.")
                 let bundle = Bundle(for: AddressListViewController.self)
                 guard let addressSearchVC = UIStoryboard(name: "Address", bundle: bundle).instantiateViewController(withIdentifier: "AddressSearchViewController") as? AddressListViewController else {
                     print("😱 AddressListViewController cannot be instantiated.")

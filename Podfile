@@ -6,7 +6,7 @@ target 'AddressSearchModule' do
   use_frameworks!
 
   # Pods for AddressSearchModule
-  pod 'AddressSearchModule', :git => 'https://github.com/TLCompany/AddressSearch-iOS.git', :tag => '1.1.0'
+  pod 'AddressSearchModule', :git => 'https://github.com/TLCompany/AddressSearch-iOS.git', :tag => '1.1.1'
   pod 'Alamofire'
   pod 'Toast-Swift'
 end
