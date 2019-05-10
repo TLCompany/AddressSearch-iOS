@@ -1,5 +1,5 @@
 PODS:
-  - AddressSearchModule (1.0.17):
+  - AddressSearchModule (1.0.19):
     - Alamofire
     - Toast-Swift
   - Alamofire (4.8.2)
@@ -15,7 +15,7 @@ SPEC REPOS:
     - Toast-Swift
 
 SPEC CHECKSUMS:
-  AddressSearchModule: 0f6248c2c673aafda448bc8ef887b2e202c522c1
+  AddressSearchModule: 5fcb6bb2b55d2077648e4eca18fbb533ded2ec43
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 

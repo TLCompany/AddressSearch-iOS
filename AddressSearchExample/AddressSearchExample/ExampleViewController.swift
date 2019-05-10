@@ -23,7 +23,7 @@ class ExampleViewController: UIViewController {
             return bunjiAddrsLabel.text
         }
         set {
-            bunjiAddrsLabel.text = "번지주소: \(newValue ?? "")"
+            bunjiAddrsLabel.text = "[번지주소]\n\(newValue ?? "")"
         }
     }
     
@@ -32,7 +32,7 @@ class ExampleViewController: UIViewController {
             return roadAddrsLabel.text
         }
         set {
-            roadAddrsLabel.text = "도로명 주소: \(newValue ?? "")"
+            roadAddrsLabel.text = "[도로명 주소]\n\(newValue ?? "")"
         }
     }
     
@@ -41,7 +41,7 @@ class ExampleViewController: UIViewController {
             return engAddrsLabel.text
         }
         set {
-            engAddrsLabel.text = "영어 주소: \(newValue ?? "")"
+            engAddrsLabel.text = "[영어 주소]\n\(newValue ?? "")"
         }
     }
     
@@ -50,7 +50,7 @@ class ExampleViewController: UIViewController {
             return detailLabel.text
         }
         set {
-            detailLabel.text = "상세주소: \(newValue ?? "")"
+            detailLabel.text = "[상세주소]\n\(newValue ?? "")"
         }
     }
     
@@ -59,7 +59,7 @@ class ExampleViewController: UIViewController {
             return zipCodeLabel.text
         }
         set {
-            zipCodeLabel.text = "우편번호: \(newValue ?? "")"
+            zipCodeLabel.text = "[우편번호]\n\(newValue ?? "")"
         }
     }
     
@@ -94,6 +94,11 @@ extension ExampleViewController: AddressSearchHelperDelegate {
     
     func didFinishSearchingAddress(_ address: Address?) {
         guard let addrs = address else { return }
+        bunjiAddrs = addrs.jibunAddr
+        roadAddrs = addrs.roadFullAddr
+        engAddrs = addrs.engAddr
+        detail = addrs.detail
+        zipCode = addrs.zipNo
         
     }
 }

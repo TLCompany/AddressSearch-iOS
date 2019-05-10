@@ -10,31 +10,31 @@ import Foundation
 
 public struct Address {
     /// 전체주소(번지)
-    let jibunAddr: String
+    public let jibunAddr: String
     /// 전체주소(도로명)
-    let roadFullAddr: String
+    public let roadFullAddr: String
     /// 전체주소(영어)
-    let engAddr: String
+    public let engAddr: String
     /// 우편번호
-    let zipNo: String
+    public let zipNo: String
     /// 시 이름
-    let siNm: String
+    public let siNm: String
     /// 시군구 명
-    let sggNm: String
+    public let sggNm: String
     /// 읍면동 명
-    let emdNm: String
+    public let emdNm: String
     /// 법정리 명
-    let liNm: String
+    public let liNm: String
     /// 도로명
-    let rn: String
+    public let rn: String
     /// 번지
-    let lnbrMnnm: String
+    public let lnbrMnnm: String
     /// 호
-    let lnbrSlno: String
+    public let lnbrSlno: String
     /// 상세주소(사용자입력)
-    var detail: String? = nil
+    public var detail: String? = nil
     
-    init?(json: [String: Any]) {
+    public init?(json: [String: Any]) {
         guard let jbAddrs = json["jibunAddr"] as? String else {
             print("jbAddrs JSON 변환 중 에러발생 😭"); return nil
         }
