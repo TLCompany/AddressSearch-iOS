@@ -12,6 +12,7 @@ import AddressSearchModule
 class ExampleViewController: UIViewController {
 
     private var addressSearchHelper: AddressSearchHelper? = nil
+    private var confmKey = "YOUR_CONFMKEY"
     @IBOutlet private weak var bunjiAddrsLabel: UILabel!
     @IBOutlet private weak var roadAddrsLabel: UILabel!
     @IBOutlet private weak var engAddrsLabel: UILabel!
@@ -82,7 +83,7 @@ class ExampleViewController: UIViewController {
         
         addressSearchHelper = AddressSearchHelper()
         addressSearchHelper?.viewController = self
-        addressSearchHelper?.confmKey = "U01TX0FVVEgyMDE5MDQyODE5NTM0NjEwODY4ODQ="
+        addressSearchHelper?.confmKey = confmKey
         addressSearchHelper?.countPerPage = 50
         addressSearchHelper?.delegate = self
     }

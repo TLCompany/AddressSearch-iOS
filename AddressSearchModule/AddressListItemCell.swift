@@ -16,7 +16,7 @@ final class AddressListItemCell: UITableViewCell {
     
     public var address: Address? {
         didSet {
-            guard let jbAddrs = address?.jibunAddr, let rdAddrs = address?.roadFullAddr else { return }
+            guard let jbAddrs = address?.jibunAddr, let rdAddrs = address?.roadAddr else { return }
             jibunAddrsLabel.text = jbAddrs
             roadNameAddrsLabel.text = rdAddrs
         }

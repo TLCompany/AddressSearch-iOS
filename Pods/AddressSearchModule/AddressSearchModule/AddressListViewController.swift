@@ -86,6 +86,7 @@ class AddressListViewController: UIViewController {
             
             guard let addresses = receivedAddresses, !addresses.isEmpty else {
                 DispatchQueue.main.async {
+                    self.view.makeToast("검색결과가 없습니다.")
                     self.totalResultLabel.text = "검색결과 없음"
                     self.addrsListTableView.reloadData()
                 }

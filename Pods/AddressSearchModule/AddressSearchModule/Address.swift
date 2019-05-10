@@ -12,7 +12,7 @@ public struct Address {
     /// 전체주소(번지)
     public let jibunAddr: String
     /// 전체주소(도로명)
-    public let roadFullAddr: String
+    public let roadAddr: String
     /// 전체주소(영어)
     public let engAddr: String
     /// 우편번호
@@ -79,7 +79,7 @@ public struct Address {
         }
         
         self.jibunAddr = jbAddrs
-        self.roadFullAddr = rdAddrsPart1 + (rdAddrsPart2 == nil ? "" : " (\(rdAddrsPart2!.replacingOccurrences(of: " ", with: "")))")
+        self.roadAddr = rdAddrsPart1 + (rdAddrsPart2 == nil ? "" : " (\(rdAddrsPart2!.replacingOccurrences(of: " ", with: "")))")
         self.engAddr = enAddrs
         self.zipNo = zipCode
         self.siNm = siName
