@@ -94,6 +94,6 @@ extension ExampleViewController: AddressSearchHelperDelegate {
     
     func didFinishSearchingAddress(_ address: Address?) {
         guard let addrs = address else { return }
-        bunjiAddrs = addrs.jibunAddr
+        
     }
 }
